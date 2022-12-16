@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const db_link = 'mongodb+srv://admin:spicemobile@cluster0.5zoczv3.mongodb.net/?retryWrites=true&w=majority'; 
-mongoose.connect(db_link).then(function(db){
+const secrets = require("../secret"); 
+mongoose.connect(secrets.DB_Link).then(function(db){
     console.log('db connected');
 })
 .catch(function(err){

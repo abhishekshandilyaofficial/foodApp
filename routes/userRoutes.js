@@ -1,4 +1,5 @@
 const express = require('express');
+const app = express();
 const { protectRoute } = require("../controller/authController");
 const { profileController, getAllUserController } = 
 require("../controller/userController");
